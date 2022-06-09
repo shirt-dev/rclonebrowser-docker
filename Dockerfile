@@ -5,7 +5,7 @@
 FROM jlesage/baseimage-gui:alpine-3.12-glibc
 
 # Define build arguments
-ARG RCLONE_VERSION=current
+ARG RCLONE_VERSION=v1.56.2
 
 # Define environment variables
 ENV ARCH=amd64
@@ -79,5 +79,5 @@ LABEL \
       org.label-schema.name="rclonebrowser" \
       org.label-schema.description="Docker container for RcloneBrowser" \
       org.label-schema.version="unknown" \
-      org.label-schema.vcs-url="https://github.com/romancin/rclonebrowser-docker" \
+      org.label-schema.vcs-url="https://github.com/shirt-dev/rclonebrowser-docker" \
       org.label-schema.schema-version="1.0"
